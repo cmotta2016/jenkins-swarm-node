@@ -1,6 +1,6 @@
 [
     {
-    "type": "3",
+    "type": "2",
     "title": "Jenkins Swarm Node",
     "description": "Jenkins Swarm Node Slave",
     "note": "Deploys node jenkins slaves.",
