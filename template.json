@@ -1,5 +1,6 @@
-{
-    "type": "stack",
+[
+    {
+    "type": "3",
     "title": "Jenkins Swarm Node",
     "description": "Jenkins Swarm Node Slave",
     "note": "Deploys node jenkins slaves.",
@@ -28,3 +29,4 @@
       }
     ]
   }
+]
