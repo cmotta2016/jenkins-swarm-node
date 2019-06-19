@@ -1,5 +1,4 @@
-[
-  {
+{
     "type": "stack",
     "title": "Jenkins Swarm Node",
     "description": "Jenkins Swarm Node Slave",
@@ -29,4 +28,3 @@
       }
     ]
   }
-]
