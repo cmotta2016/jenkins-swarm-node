@@ -884,8 +884,8 @@
     "platform": "linux",
     "logo": "https://portainer.io/images/logos/jenkins.png",
     "repository": {
-      "url": "https://github.com/cmotta2016/jenkins-swarm-node",
-      "stackfile": "stacks/docker-stack.yml"
+      "url": "https://github.com/portainer/templates",
+      "stackfile": "stacks/wordpress/docker-compose.yml"
     },
     "env": [
       {
