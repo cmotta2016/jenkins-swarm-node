@@ -1,0 +1,7 @@
+version: '2'
+services:
+  jenkins-swarm-node:
+    image: "oinexus.intranet:5004/jenkins-swarm-slave/node${NODE}:${TAG}"
+    environment:
+      - JENKINS_HOME_OUT: ${JENKINS_HOME_OUT}
+    hostname: jkslave
