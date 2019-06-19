@@ -857,25 +857,7 @@
       }
     ]
   },
-  {
-    "title": "Datadog agent",
-    "type": 2,
-    "categories": ["Monitoring"],
-    "description": "Collect events and metrics",
-    "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/datadog_agent.png",
-    "platform": "linux",
-    "repository": {
-      "url": "https://github.com/portainer/templates",
-      "stackfile": "stacks/datadog-agent/docker-stack.yml"
-    },
-    "env": [
-      {
-        "name": "API_KEY",
-        "label": "Datadog API key"
-      }
-    ]
-  },
-  {
+    {
     "type": 3,
     "title": "Jenkins Swarm Node",
     "description": "Jenkins Swarm Node Slave",
@@ -884,8 +866,8 @@
     "platform": "linux",
     "logo": "https://portainer.io/images/logos/jenkins.png",
     "repository": {
-      "url": "https://github.com/portainer/templates",
-      "stackfile": "stacks/wordpress/docker-compose.yml"
+      "url": "https://github.com/cmotta2016/jenkins-swarm-node",
+      "stackfile": "stacks/docker-stack.yml"
     },
     "env": [
       {
@@ -902,6 +884,24 @@
         "name": "TAG",
         "label": "Define image tag",
         "description": "This environments define image tag."
+      }
+    ]
+  },
+  {
+    "title": "Datadog agent",
+    "type": 2,
+    "categories": ["Monitoring"],
+    "description": "Collect events and metrics",
+    "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/datadog_agent.png",
+    "platform": "linux",
+    "repository": {
+      "url": "https://github.com/portainer/templates",
+      "stackfile": "stacks/datadog-agent/docker-stack.yml"
+    },
+    "env": [
+      {
+        "name": "API_KEY",
+        "label": "Datadog API key"
       }
     ]
   }
