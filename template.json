@@ -1,31 +1,21 @@
 [
-    {
-    "type": "2",
-    "title": "Jenkins Swarm Node",
-    "description": "Jenkins Swarm Node Slave",
-    "note": "Deploys node jenkins slaves.",
+  {
+    "type": 3,
+    "title": "Wordpress",
+    "description": "Wordpress setup with a MySQL database",
+    "note": "Deploys a Wordpress instance connected to a MySQL database.",
     "categories": ["CMS"],
     "platform": "linux",
-    "logo": "https://portainer.io/images/logos/jenkins.png",
+    "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/wordpress.png",
     "repository": {
-      "url": "https://github.com/cmotta2016/jenkins-swarm-node",
-      "stackfile": "stacks/docker-stack.yml"
+      "url": "https://github.com/portainer/templates",
+      "stackfile": "stacks/wordpress/docker-compose.yml"
     },
     "env": [
       {
-        "name": "JENKINS_HOME_OUT",
-        "label": "Exposed Jenkins directory",
-        "description": "This environments expose directory of Jenkins."
-      },
-      {
-        "name": "NODE",
-        "label": "Define Node version",
-        "description": "This environments define node version of image."
-      },
-      {
-        "name": "TAG",
-        "label": "Define image tag",
-        "description": "This environments define image tag."
+        "name": "MYSQL_DATABASE_PASSWORD",
+        "label": "Database root password",
+        "description": "Password used by the MySQL root user."
       }
     ]
   }
